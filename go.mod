@@ -1,3 +1,3 @@
-module github.com/juanky-go/logs
+module github.com/juanky-estevez/logs
 
 go 1.24.1
