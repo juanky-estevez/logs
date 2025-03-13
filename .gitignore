@@ -1,0 +1,33 @@
+# Binarios compilados
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# Archivos de compilación de Go
+*.log
+*.test
+*.prof
+*.sum
+
+# Carpetas generadas por Go
+/bin/
+/pkg/
+/dist/
+build/
+vendor/
+
+# Archivos de dependencias (solo si usas módulos de Go, mantener go.sum si compartes el proyecto)
+go.work
+go.work.sum
+
+# Configuración del entorno de desarrollo
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de Git que pueden generar conflictos
+.DS_Store
+Thumbs.db

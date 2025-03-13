@@ -1,0 +1,17 @@
+docker/
+.gitignore
+README.md
+
+# Configuración del entorno de desarrollo
+
+.env
+.env._
+.vscode/
+.idea/
+_.swp
+\*.swo
+
+# Archivos de Git que pueden generar conflictos
+
+.DS_Store
+Thumbs.db

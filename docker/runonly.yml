@@ -1,0 +1,12 @@
+services:
+  logs:
+    restart: always
+    container_name: logs
+    build:
+      context: ../
+      dockerfile: ./docker/dockerfile
+    working_dir: /logs
+    env_file:
+      - .env
+    volumes:
+      - ../:/logs
