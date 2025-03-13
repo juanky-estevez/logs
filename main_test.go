@@ -3,7 +3,7 @@ package logs_test
 import (
 	"testing"
 
-	"gitlab.com/juanky-go/logs"
+	"github.com/juanky-go/logs"
 )
 
 func TestInfo(t *testing.T) {
