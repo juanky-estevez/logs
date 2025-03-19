@@ -69,3 +69,7 @@ First release
 #### v1.0.1
 
 LoadConfig implemented
+
+#### v1.0.2
+
+Data loaded from environment variables

@@ -6,10 +6,6 @@ import (
 	"github.com/juanky-estevez/logs"
 )
 
-func init() {
-	logs.LoadConfig("./logs", "UTC-5", "logs_test", "test")
-}
-
 func TestInfo(t *testing.T) {
 	data := logs.LogStruct{
 		Type:      logs.TypeInfo,
