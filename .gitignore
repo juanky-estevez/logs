@@ -17,6 +17,7 @@
 /dist/
 build/
 vendor/
+logs/
 
 # Archivos de dependencias (solo si usas módulos de Go, mantener go.sum si compartes el proyecto)
 go.work

@@ -11,7 +11,7 @@ func showInTerminal(data LogStruct, longDate string) {
 		// "\x1b[37m[%s\x1b[0m%s\x1b[37m] \x1b[90m%s %s (%s)%s%s%s - message: \x1b[37m%s\x1b[0m",
 		colors[data.Type],
 		data.Type,
-		environment,
+		environmentLogs,
 		longDate,
 		data.Function,
 		conditionalLogField("endpoint: ", data.Endpoint),

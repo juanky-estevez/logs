@@ -8,12 +8,12 @@ import (
 
 func saveInFile(data LogStruct, shortDate string, longDate string) error {
 
-	filename := fmt.Sprintf("%s_%s_%s.log", projectName, environment, shortDate)
+	filename := fmt.Sprintf("%s_%s_%s.log", projectNameLogs, environmentLogs, shortDate)
 
 	message := fmt.Sprintf(
 		"[%s] %s %s (%s) %s%s%smessage: %s \n",
 		data.Type,
-		environment,
+		environmentLogs,
 		longDate,
 		data.Function,
 		conditionalLogField("endpoint: ", data.Endpoint),
@@ -24,10 +24,10 @@ func saveInFile(data LogStruct, shortDate string, longDate string) error {
 
 	// Create log file
 	var filePath string
-	if strings.HasSuffix(logFolder, "/") {
-		filePath = logFolder + filename
+	if strings.HasSuffix(folderLogs, "/") {
+		filePath = folderLogs + filename
 	} else {
-		filePath = logFolder + "/" + filename
+		filePath = folderLogs + "/" + filename
 	}
 
 	// Open file

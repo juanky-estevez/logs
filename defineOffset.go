@@ -8,11 +8,11 @@ import (
 var offset = 0
 
 func defineOffset() {
-	if timezone == "" || strings.Contains(timezone, "UTC") {
+	if timezoneLogs == "" || strings.Contains(timezoneLogs, "UTC") {
 		offset = 0
 	}
 
-	offsetString := strings.ReplaceAll(timezone, "UTC", "")
+	offsetString := strings.ReplaceAll(timezoneLogs, "UTC", "")
 	if offsetString == "" {
 		offset = 0
 	}
