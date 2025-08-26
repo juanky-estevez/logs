@@ -1,25 +1,21 @@
 {
-  "name": "@juan-estevez/logs",
+  "name": "@jcestevez/logs",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "build": "rm -rf dist/ && tsc",
     "test": "npm run build && jest --coverage"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juanky-estevez/logs.git"
   },
-  "keywords": [],
+  "keywords": [
+    "logs",
+    "nest middleware"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
@@ -27,6 +23,15 @@
     "url": "https://github.com/juanky-estevez/logs/issues"
   },
   "homepage": "https://github.com/juanky-estevez/logs#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/"
+  ],
   "dependencies": {
     "@nestjs/common": "^11.1.6",
     "nanoid": "^5.1.5"
