@@ -1,0 +1,33 @@
+{
+  "name": "logs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist/ && tsc",
+    "test": "npm run build && jest --coverage",
+    "patch": "npm run upgrade && npm run build && npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanky-estevez/logs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/juanky-estevez/logs/issues"
+  },
+  "homepage": "https://github.com/juanky-estevez/logs#readme",
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "nanoid": "^5.1.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "jest": "^30.0.5",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,16 @@
+services:
+  logs:
+    restart: always
+    container_name: logs
+    build: .
+    working_dir: /app
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+      - logs_node_modules:/app/node_modules
+    command: tail -f /dev/null
+
+volumes:
+  logs_node_modules:
+  logs_null:

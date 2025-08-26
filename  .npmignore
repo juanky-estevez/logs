@@ -1,0 +1,12 @@
+coverage
+docker
+docs
+logs
+node_modules
+tests
+
+.gitignore
+.npmignore
+.npmrc
+package-lock.json
+README.md
